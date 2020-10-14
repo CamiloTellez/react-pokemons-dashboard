@@ -14,7 +14,9 @@ const PokemonDetail = ({ pokemon, handleClose }) => {
       >
         <Modal.Header closeButton>
           <Modal.Title>
-            Nombre Pokemon <small>Id123456</small>
+            <h4 className="title-big">
+              Nombre Pokemon <small className="pokemon-id">Id123456</small>
+            </h4>
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
@@ -29,7 +31,11 @@ const PokemonDetail = ({ pokemon, handleClose }) => {
               </div>
               <div className="col-md-6">
                 <div className="container">
-                  <p>Descripción</p>
+                  <div className="row">
+                    <div className="col-12">
+                      <p className="pokemon-description">Descripción</p>
+                    </div>
+                  </div>
                   <table className="table table-hover">
                     <tbody>
                       <tr>
@@ -73,7 +79,7 @@ const PokemonDetail = ({ pokemon, handleClose }) => {
                 </div>
                 <div className="container">
                   <div className="row">
-                    <h5>Tipos</h5>
+                    <h5 className="sub-title">Tipos</h5>
                     <div className="col-12">
                       <span className="badge badge-pill badge-success mr-1">
                         success
@@ -93,7 +99,7 @@ const PokemonDetail = ({ pokemon, handleClose }) => {
         </Modal.Body>
         <Modal.Footer>
           <div className="container-fluid">
-            <h4>Evolución</h4>
+            <h5 className="title">Evolución</h5>
             <div className="row">
               <div className="col-4">
                 <img

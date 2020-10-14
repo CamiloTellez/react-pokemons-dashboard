@@ -9,7 +9,7 @@ const PokemonCard = () => {
   return (
     <div className="col-md-4">
       <div
-        className="card mb-4 shadow-sm w-75"
+        className="card mb-4 shadow w-75 pokemon-card"
         onClick={() => viewPokemonDetail()}
       >
         <img
@@ -18,7 +18,7 @@ const PokemonCard = () => {
           alt=""
         />
         <div className="card-body">
-          <h5 className="card-title ">Nombre Pokemon</h5>
+          <h5 className="pokemon-name">Nombre Pokemon</h5>
         </div>
       </div>
       {show ? (

@@ -4,6 +4,17 @@
   padding-bottom: 20px !important;
 }
 
+/*Navbar*/
+
+.nav-bar-custom {
+  background: #ffffff;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+.card-filters {
+  height: 100%;
+}
+
 /*Filtro forma colores*/
 .square-color {
   width: 15px;
@@ -11,6 +22,42 @@
   background: red;
 }
 
-/*Imagen circular para la evolución*/
-.img-evolucion {
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #004c8d;
+}
+
+.title-big {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #004c8d;
+}
+
+.sub-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #2f8bd9;
+}
+
+/**Lista de pokemones**/
+div .pokemon-card:hover {
+  transform: scale(1.05, 1.05);
+  cursor: pointer;
+}
+
+.pokemon-name {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #004c8d;
+}
+
+.pokemon-description {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #638aab;
+}
+
+.pokemon-id {
+  font-size: 0.9rem;
 }

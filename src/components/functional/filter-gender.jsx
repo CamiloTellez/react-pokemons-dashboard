@@ -4,7 +4,7 @@ const FilterGender = () => {
   return (
     <div className="row">
       <div className="col-12">
-        <h5>Genero:</h5>
+        <h5 className="sub-title">Genero:</h5>
       </div>
 
       <div className="col-12 mt-1">

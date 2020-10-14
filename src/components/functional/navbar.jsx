@@ -3,9 +3,9 @@ import logoPng from "../../assets/images/logo.png";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-light">
+    <nav className="navbar navbar-expand-md navbar-dark fixed-top nav-bar-custom">
       <a className="navbar-brand" href="#somewhere">
-        <img src={logoPng} width="70" height="70" alt="" loading="lazy" />
+        <img src={logoPng} width="250" height="90" alt="" loading="lazy" />
       </a>
 
       <button

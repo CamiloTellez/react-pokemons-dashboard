@@ -4,7 +4,7 @@ const FilterType = () => {
   return (
     <div className="row">
       <div className="col-12">
-        <h5>Tipo:</h5>
+        <h5 className="sub-title">Tipo:</h5>
       </div>
 
       <div className="col-6 mt-1">

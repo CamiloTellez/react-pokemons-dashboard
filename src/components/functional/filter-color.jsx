@@ -4,7 +4,7 @@ const FilterColor = () => {
   return (
     <div className="row">
       <div className="col-12">
-        <h5>Color:</h5>
+        <h5 className="sub-title">Color:</h5>
       </div>
 
       <div className="col-6 mt-1">
