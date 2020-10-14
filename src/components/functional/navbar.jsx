@@ -1,7 +1,7 @@
 import React from "react";
 import logoPng from "../../assets/images/logo.png";
 
-const Navbar = () => {
+const Navbar = ({ onInputQuery }) => {
   return (
     <nav className="navbar navbar-expand-md navbar-dark fixed-top nav-bar-custom">
       <a className="navbar-brand" href="#somewhere">
@@ -26,6 +26,7 @@ const Navbar = () => {
             type="text"
             placeholder="Search"
             aria-label="Search"
+            onChange={onInputQuery.bind(this)}
           />
         </div>
       </div>

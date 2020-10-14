@@ -2,7 +2,7 @@ import React from "react";
 
 import PokemonCard from "./pokemon-card";
 
-const PokemonsList = () => {
+const PokemonsList = ({ pokemonsList }) => {
   return (
     <div className="container">
       <div className="row text-left mb-4">
@@ -11,7 +11,9 @@ const PokemonsList = () => {
         </div>
       </div>
       <div className="row ">
-        <PokemonCard />
+        {pokemonsList.data.map((pk) => (
+          <PokemonCard pokemon={pk} key={pk.entry_number} />
+        ))}
       </div>
     </div>
   );

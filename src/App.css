@@ -11,9 +11,9 @@
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
 }
 
-.card-filters {
-  height: 100%;
-}
+/* .card-filters {
+  height: 90%;
+} */
 
 /*Filtro forma colores*/
 .square-color {
