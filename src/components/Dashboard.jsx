@@ -7,20 +7,26 @@ import FilterGender from "./functional/filter-gender";
 
 import useFetch from "../hooks/pokemons-fetch-list";
 
+/* Componente principal del dashboard, se encarga de administrar el estado y crea el layout principal */
+
 const Dashboard = () => {
   const url = `https://pokeapi.co/api/v2/pokedex/national`;
-  const { status, data } = useFetch(url);
+  const { status, data } = useFetch(url); ///Consume el hook para cachear la lista de los pokemones
 
   let pokemonsList =
     status === "fetched" && data.pokemon_entries ? data.pokemon_entries : [];
+
   const [currentPage, setCurrentPage] = useState(1);
   const [filteredList, setFiltered] = useState([]);
   const [filtered, setIsFiltered] = useState(false);
 
+  ///Función que se ejecuta cuando se oprime el botón ver mas, realiza un tipo de  paginación para cargar más pokemones
   const loadMore = () => {
     setCurrentPage(currentPage + 1);
   };
 
+  //Función ejecutada por el buscador de la barra de navegación cuando un usuario escribe dentro del campo
+  //filtra la lista de pokemones por id o por nombre y actualiza el estado del dashboard
   const onInputFilterHandler = (e) => {
     let q = e.target.value;
     if (!q || q === "") {
@@ -118,6 +124,7 @@ const Dashboard = () => {
     </div>
   );
 
+  //Función de paginación o ver más
   function paginator(items, current_page) {
     let page = current_page || 1,
       per_page = current_page * 20,

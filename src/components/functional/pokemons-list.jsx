@@ -1,7 +1,7 @@
 import React from "react";
 
 import PokemonCard from "./pokemon-card";
-
+/* Este componente se encarga de renderizar la lista de pokemones que se le envian desde el componente superior */
 const PokemonsList = ({ pokemonsList }) => {
   return (
     <div className="container">
